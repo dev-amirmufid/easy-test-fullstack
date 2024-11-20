@@ -77,7 +77,7 @@ Berikut adalah daftar endpoint yang tersedia dalam aplikasi ini beserta detail p
     }
     ```
 
-- **POST /customer**
+- **GET /customer**
   - **Deskripsi**: Soal Nomor 4.
   - **Payload**: Tidak diperlukan.
 
