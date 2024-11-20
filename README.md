@@ -13,7 +13,7 @@ Sebelum memulai, pastikan Anda telah menginstal perangkat lunak berikut:
 
 1. **Kloning Repositori**
    ```bash
-   git clone https://github.com/username/easy-test-fullstack.git
+   git clone https://github.com/dev-amirmufid/easy-test-fullstack.git
    cd easy-test-fullstack
    ```
 
