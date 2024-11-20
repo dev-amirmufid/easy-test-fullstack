@@ -1,0 +1,30 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Customer {
+  id     Int     @id @default(autoincrement())
+  nama   String
+  alamat String
+  nohp   String
+  email  String
+  orders Order[]
+
+  @@index([email, nohp])
+  @@map("customers")
+}
+
+model Order {
+  id          Int      @id @default(autoincrement())
+  order_date  DateTime
+  customer_id Int
+  customer    Customer @relation(fields: [customer_id], references: [id])
+
+  @@index([order_date])
+  @@map("orders")
+}
